@@ -1,0 +1,71 @@
+:root{
+    --main-color:#ffc0cb
+}
+.text{
+    color: var(--main-color);
+    font-size: 20px;
+}
+#heading{
+    text-decoration: underline;
+}
+.highlight{
+    background-color: rgb(0, 235, 252);
+}
+p {
+    font-style: italic;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: cornflowerblue;
+  border: 2px solid black;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+section {
+  background-color: aliceblue;
+  position: relative;
+  /* posisi diberikan relatif agar bisa menjadi acuan dari posisiton absolute */
+}
+
+section div.box:nth-child(3) {
+  position: relative;
+  left: 150px;
+}
+
+section div.box:nth-child(2) {
+  position: absolute;
+  /* left: 125px; */
+  top: -50px;
+  right: 0;
+}
+button:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+.con::before{
+    content: "===>";
+    color: green;
+}
+.con::after{
+    content: "<===";
+    color: green;
+}
+.feb {
+    position: fixed;
+    bottom: 20px;  
+    left: 20px;    
+    background-color: #e91e63; 
+    color: white;            
+    border: none;            
+    border-radius: 50%;     
+    width: 50px;              
+    height: 50px;             
+    font-size: 24px;         
+
+}
