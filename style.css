@@ -30,7 +30,6 @@ h1, h2, h3 {
 section {
   background-color: aliceblue;
   position: relative;
-  /* posisi diberikan relatif agar bisa menjadi acuan dari posisiton absolute */
 }
 
 section div.box:nth-child(3) {
@@ -40,7 +39,6 @@ section div.box:nth-child(3) {
 
 section div.box:nth-child(2) {
   position: absolute;
-  /* left: 125px; */
   top: -50px;
   right: 0;
 }
